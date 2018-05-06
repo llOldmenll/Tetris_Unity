@@ -1,6 +1,12 @@
 ﻿<Properties StartupConfiguration="{51071AAB-2A0C-34DA-9762-7D9954257F4C}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tetromino.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameManager.cs" Line="37" Column="27" />
+      <File FileName="Assets/Scripts/GridPlayground.cs" Line="11" Column="5" />
+      <File FileName="Assets/Scripts/Tetromino.cs" Line="52" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
