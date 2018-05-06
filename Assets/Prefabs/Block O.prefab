@@ -71,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406314045906168}
   - component: {fileID: 114801077592500772}
+  - component: {fileID: 114450765228247180}
   m_Layer: 0
   m_Name: Block O
   m_TagString: Tetromino
@@ -332,6 +333,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1811440828821808}
   m_Mesh: {fileID: 4300000, guid: bf5b1b6ae4a69443eb75d1a5495c2620, type: 3}
+--- !u!114 &114450765228247180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1805265991412494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82c8cd4b0a934d5c896eca2ed97b78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  blocks: []
+  type: O
 --- !u!114 &114801077592500772
 MonoBehaviour:
   m_ObjectHideFlags: 1

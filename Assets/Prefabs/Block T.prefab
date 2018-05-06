@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4453022566352478}
   - component: {fileID: 114529301525297492}
+  - component: {fileID: 114856267245165448}
   m_Layer: 0
   m_Name: Block T
   m_TagString: Tetromino
@@ -344,3 +345,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deltaTime: 0.2
+--- !u!114 &114856267245165448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1038569653140032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82c8cd4b0a934d5c896eca2ed97b78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  blocks: []
+  type: T

@@ -5,7 +5,7 @@ public class Tetromino : MonoBehaviour
 {
 
     public float deltaTime = 0.5f;
-    float pastTime = 0;
+    float counter = 0;
 
     // Use this for initialization
     void Start()
@@ -16,11 +16,11 @@ public class Tetromino : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pastTime += Time.deltaTime;
-        if (pastTime >= deltaTime)
+        counter += Time.deltaTime;
+        if (counter >= deltaTime)
         {
             Move(Vector3.down);
-            pastTime = 0;
+            counter = 0;
         }
 
         ListenInput();
@@ -39,6 +39,13 @@ public class Tetromino : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             Move(Vector3.down);
+        }
+        else if (Input.GetKeyDown(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            if (transform != null)
+            {
+                GetComponent<Rotation>().rotateRight(false);
+            }
         }
     }
 

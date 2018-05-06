@@ -1,7 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using System.Linq;
+using System;
 
-public static class GridPlayground
+public class GridPlayground : MonoBehaviour
 {
     public static float deltaX = 1;
     public static float deltaY = 3;
@@ -35,5 +38,49 @@ public static class GridPlayground
         }
 
         return isValide;
+    }
+
+
+    public static void DeleteFullLines()
+    {
+        ArrayList fullLines = new ArrayList();
+
+        for (int i = 0; i < columns; i++)
+        {
+            bool isRowFull = true;
+            for (int j = 0; j < rows; j++)
+            {
+                isRowFull &= cellState[j, i];
+            }
+            if (isRowFull)
+                fullLines.Add(i);
+        }
+
+        //hScore.addPointsForLines(isFullLine.Count);
+
+        for (int i = 0; i < fullLines.Count; i++)
+        {
+            foreach (GameObject cube in GameObject.FindGameObjectsWithTag("GameCube"))
+            {
+                if ((int)fullLines[i] == (int)cube.transform.position.y - 3)
+                    Destroy(cube);
+            }
+
+            foreach (GameObject cube in GameObject.FindGameObjectsWithTag("GameCube"))
+            {
+                int y = (int)cube.transform.position.y - 3;
+                if ((int)fullLines[i] < y)
+                {
+                    cube.transform.position += Vector3.down;
+                }
+            }
+
+            for (int j = 0; j < fullLines.Count; j++)
+            {
+                fullLines[j] = (int)fullLines[j] - 1;
+            }
+        }
+
+
     }
 }
