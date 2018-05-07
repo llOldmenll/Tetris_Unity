@@ -11,6 +11,7 @@ public class Spawner : MonoBehaviour
     public GameObject preview;
     int nextIndex;
 
+
     void Start()
     {
         Instantiate(tetromino[Random.Range(0, tetromino.Length)],
