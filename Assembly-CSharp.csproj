@@ -102,6 +102,8 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GridPlayground.cs" />
     <Compile Include="Assets\Scripts\Rotation.cs" />
+    <Compile Include="Assets\Scripts\ScenesManager.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Tetromino.cs" />
     <None Include="Assets\Materials\POLY STYLE - Vegetation Pack\Shaders\_BloomAndFlares\BlendOneOne.shader" />

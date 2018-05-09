@@ -345,6 +345,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deltaTime: 0.2
+  btnRotate: {fileID: 0}
+  btnLeft: {fileID: 0}
+  btnRight: {fileID: 0}
+  btnDown: {fileID: 0}
 --- !u!114 &114685841695884178
 MonoBehaviour:
   m_ObjectHideFlags: 1

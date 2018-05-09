@@ -243,3 +243,6 @@
 /Users/maxim/Desktop/Tetris_Unity/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache
 /Users/maxim/Desktop/Tetris_Unity/obj/Debug/Assembly-CSharp.dll
 /Users/maxim/Desktop/Tetris_Unity/obj/Debug/Assembly-CSharp.pdb
+/Users/maxim/Desktop/Tetris_Unity/Temp/bin/Debug/cssparse.net.dll
+/Users/maxim/Desktop/Tetris_Unity/Temp/bin/Debug/DeJson.dll
+/Users/maxim/Desktop/Tetris_Unity/Temp/bin/Debug/websocket-sharp.dll
