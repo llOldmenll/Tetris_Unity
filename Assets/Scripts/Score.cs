@@ -25,9 +25,7 @@ public class Score : MonoBehaviour
 				score += rowsNumber * 1200;
 				break;
 		}
-
-
-
+        
 		float newDelta = (0.3f - score / 5000f);
 
 		if (newDelta > 0)

@@ -4,15 +4,13 @@ using System.Collections;
 public class Tetromino : MonoBehaviour
 {
 
-	//public float deltaTime = 0.3f;
 	float counter = 0;
 	ArrowBtnState btnRotate;
 	ArrowBtnState btnLeft;
 	ArrowBtnState btnRight;
 	ArrowBtnState btnDown;
 	Score score;
-
-	// Use this for initialization
+    
 	void Start()
 	{
 		score = GameObject.FindGameObjectWithTag("Score").GetComponent<Score>();

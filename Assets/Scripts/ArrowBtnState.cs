@@ -6,14 +6,6 @@ public class ArrowBtnState : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     [HideInInspector]
     public bool pressed = false;
 
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public void OnPointerDown(PointerEventData eventData)
     {
